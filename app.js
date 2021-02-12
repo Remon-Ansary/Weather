@@ -19,7 +19,7 @@ button.addEventListener('click',() => {
 
                 Name.innerHTML = 'Location: '+nameValue;
                 desc.innerHTML = 'Weather: ' +descValue;
-                temp.innerHTML = 'Temperature: '+tempValue; 
+                temp.innerHTML = 'Temperature: '+(tempValue/10).toFixed(1); 
                 humidity.innerHTML = 'Humidity: '+humidityValue;
             })
 
@@ -32,5 +32,3 @@ button.addEventListener('click',() => {
             .catch(err => alert("Wrong city name"));
 
     })
-
-   
