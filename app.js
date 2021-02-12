@@ -16,15 +16,12 @@ button.addEventListener('click',() => {
                 var descValue = data['weather'][0]['description'];
                 var humidityValue =  data['main']['humidity'];
 
-
+                
                 Name.innerHTML = 'Location: '+nameValue;
                 desc.innerHTML = 'Weather: ' +descValue;
                 temp.innerHTML = 'Temperature: '+(tempValue/10).toFixed(1); 
                 humidity.innerHTML = 'Humidity: '+humidityValue;
             })
-
-
-
 
 
 
